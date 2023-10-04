@@ -294,7 +294,7 @@ let mobileNav = document.getElementById("mobile-nav");
 // console.log(mobileNav);
 
 function openBurger(){
-    mobileNav.classList.add("isClicked");
+    mobileNav.classList.toggle("isClicked");
     setTimeout(() => {
         mobileNav.style.display = "none";
     }, 0);
@@ -306,7 +306,7 @@ ham.addEventListener("click", openBurger);
 
 
 function closeBurger(){
-    mobileNav.classList.add("isClicked");
+    mobileNav.classList.toggle("isClicked");
 }
 
 
