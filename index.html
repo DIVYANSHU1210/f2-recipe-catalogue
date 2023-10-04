@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-ham">
+                <div id="hamburger"><i class="fa-solid fa-bars"></i></div>
+                <div id = "logo"><img src="./images/Cookpal 1.png" alt="logo"></div>
+            </div>
+            
+            <div class="opt-prof">
+                <div class="options">
+                    <p>Home</p>
+                    <p>Explore</p>
+                    <p>Help</p>
+                </div>
+                <div class="profile"><img src="./images/Ellipse 2.png" alt=""></div> 
+            </div>
+        </nav>
+
+        <div id="mobile-nav">
+            <div class="logo-prof">
+                <div id = "logo" style="flex: 4;"><img src="./images/Cookpal 1.png" alt="logo"></div>
+                <div class="profile" style="flex: 1;"><img src="./images/Ellipse 2.png" alt=""></div>
+                <div id="close-burger" style="flex: 0.5; font-size: 20px;"><i class="fa-solid fa-xmark"></i></div> 
+            </div>
+            <div class="opt">
+                <p>Home</p>
+                <p>Explore</p>
+                <p>Help</p>
+            </div>
+            
+        </div>
+    
+        <div class="hero">
+            <p style="color: #dc582a; font-size: 30px;">Trending now</p>
+            <p style="color: white; font-size: 50px; font-weight: 900;">Mike’s famous salad <br>with cheese</p>
+            <P style="color: white; font-size: 25px;">By John Mike</P>
+        </div>
+
+        <div class="search-section">
+            <h3>Search For Recipes</h3>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for recipes..." id ="search" onkeyup="searchByName()">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass" onclick="searchByName()"></i></button>
+            </div>
+        </div>
+
+        <div class="categories">
+            <button id="all" value="all" onclick="recipeCheck(event)">
+                <p>All Recipes</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <button id="veg" value="veg" onclick="recipeCheck(event)">
+                <p>Veg Recipes Only</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <button id="non-veg" value="non-veg" onclick="recipeCheck(event)">
+                <p>Non Veg Recipes</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+
+        <div style="display: flex; margin-block: 10px;">
+            <div class="Filters" style="flex: 1; padding-block: 10px; line-height: 30px;">
+                <h3>Filters</h3>
+                <p style="font-weight: 400;">Ratings</p>
+                <form>
+                    <input type="radio" id="above4" name="rating-filter" value="above4">
+                    <label for="html">4 and Above</label><br>
+                    <input type="radio" id="below4" name="rating-filter" value="below4">
+                    <label for="css">Below 4</label>    
+                </form>
+            </div>
+            <div id="my-recipes" style="flex:4"></div>
+
+            
+        </div>
+        <div class="footer">
+            <div style="flex: 2; margin-left: 20px;">
+                <img src="./images/Cookpal 1.png" alt="">
+                <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+            </div>
+            <table style="flex: 2; text-align: center; margin: 20px;">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Resources</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Home</td>
+                        <td>Blog</td>
+                    </tr>
+                    <tr>
+                        <td>Explore</td>
+                        <td>Use Cases</td>
+                    </tr>
+                    <tr>
+                        <td>Team</td>
+                        <td>Insights</td>
+                    </tr>
+                    <tr>
+                        <td>About us</td>
+                    </tr>
+                    <tr>
+                        <td>Activity</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="flex: 2;">
+                <img src="./images/Cookpal 1.png" alt="">
+                <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+                <div style="display: flex; align-items: center;">
+                    <div style="border: #253D4E solid 1px; border-radius: 5px; display: flex; margin: 5px; padding: 10px;">
+                        <input type="text" style="border: none; outline: none; flex:5" placeholder="Your Email">
+                        <i class="fa-solid fa-at" style="flex:1"></i>
+                    </div>   
+                    <button type="submit" style="background-color: #509E2F; color: white; padding: 10px; border: none;">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links" style="display: flex; justify-content: center; margin-block-end:20px;">
+            <div class="social-btns">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="social-btns">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="social-btns">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social-btns">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

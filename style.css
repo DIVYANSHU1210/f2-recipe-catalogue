@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Inter:wght@500&display=swap');
+
+
+*{
+    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin-inline: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 10px;
+}
+
+.logo-ham{
+    display: flex;
+    align-items: center;
+}
+
+.logo-ham>div{
+    margin-inline: 10px;
+}
+.opt-prof{
+    display: flex;
+}
+
+.options>p{
+    margin: 10px;
+}
+
+.options{
+    display: flex;
+}
+.profile{
+    margin-inline: 10px;
+}
+
+.hero{
+    background-image: url(./images/Rectangle\ 20.png);
+    background-repeat: no-repeat;
+    /* background-size: cover;  */
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    margin-block: 10px;
+}
+
+
+.search-bar{
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+    /* justify-content: space-evenly; */
+}
+
+/* .search-bar>i{
+    flex: 1;
+}
+.search-bar>input{
+    flex :30;
+}
+.search-bar>button{
+    flex:1;
+} */
+.search-bar>i{
+    padding: 10px;
+    color: #757575;
+}
+
+.search-bar>input{
+    width: 99%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+}
+
+.search-bar>button{
+    padding: 10px;
+    border: none;
+    background-color: #509e2f;
+    color: white;
+}
+
+.categories{
+    display: flex;
+}
+.categories>button{
+    display: flex;
+    width:200px;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+#all{
+    background-color: #EAAA00;
+}
+#veg{
+    background-color: #C4D600;
+}
+#non-veg{
+    background-color: #DC582A;
+}
+
+
+
+.card{
+    width: 270px;
+    padding: 10px;
+    border: #ccc9c9 solid 1px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    margin: 10px;
+}
+
+.card:hover{
+    box-shadow: 5px 20px 30px rgb(73, 72, 72);
+}
+
+#my-recipes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block-start: 20px;
+}
+
+.footer>table>thead>tr>th , .footer>table>tbody>tr>td{
+    padding-block: 10px;
+}
+
+
+.social-btns{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #2a2828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px !important;
+    transition: all .3s ease;
+    color: white;
+}
+
+.vanish{
+    display: none;
+}
+
+.isClicked{
+    display:block !important;
+}
+
+
+.logo-prof{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+#mobile-nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    background-color: #ffffff;
+    display: none;
+    padding: 10px;
+    box-shadow: 5px 5px 20px black;
+    transition: display 0.3s ease;
+}
+
+
+#hamburger{
+    display: none;
+    transition: all 0.1s ease;
+}
+
+#hamburger:hover, #close-burger>i:hover{
+    text-shadow: 5px 5px 20px black;
+    cursor: pointer;
+    font-size:larger;
+}
+
+.opt>p{
+    margin-block: 20px;
+    padding: 20px ;
+    background-color: #c5c3c3;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.opt>p:hover{
+    box-shadow: 5px 5px 20px black;
+    cursor: pointer;
+}
+
+
+.like:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width : 768px){
+    #hamburger{
+        display: block;
+    }
+
+    .opt-prof{
+        display: none;
+    }
+}
+
+
