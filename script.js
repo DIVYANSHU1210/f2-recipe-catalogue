@@ -132,7 +132,7 @@ function addRecipes(r){
         card.className = "card";
     
         card.innerHTML = `
-        <img src=${recipe.imageSrc} alt="" style="width: 270px; height: 200px; border-radius: 10px;">
+        <img src=${recipe.imageSrc} alt="" style="width: 230px; height: 180px; border-radius: 10px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-top:10px">
             <div>
                 <p style="color: rgb(193, 193, 193); font-size: 10px;" id="recipe-type">${recipe.type}</p>
